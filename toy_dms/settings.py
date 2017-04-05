@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django.contrib.sites',
+
     'rest_framework',
+    'allauth',
+    'allauth.account',
     'rest_auth',
     'rest_auth.registration',
 
@@ -127,3 +131,5 @@ STATIC_URL = '/static/'
 
 
 MEDIA_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'files'))
+
+SITE_ID=1
