@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_auth',
     'rest_auth.registration',
+
+    'dms',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +124,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+MEDIA_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'files'))
