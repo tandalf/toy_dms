@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'rest_auth',
+    'rest_framework.authtoken',
     'rest_auth.registration',
 
     'dms',
@@ -133,3 +134,11 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'files'))
 
 SITE_ID=1
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
