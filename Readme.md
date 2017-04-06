@@ -22,7 +22,7 @@ Still at the terminal, enter
 
     python manage.py runserver 8000 --settings=toy_dms.settings
 
-This will make the project run at [http://localhost:8000/].
+This will make the project run at [http://localhost:8000/documents].
 
 
 
