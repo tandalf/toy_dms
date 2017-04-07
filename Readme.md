@@ -1,14 +1,22 @@
 Installing the app
 ==================
-Make sure you have at least python 2.7 installed on your system. Optionally,
-you can install virtualenv to ensure you dont polute your global environment
-by mistake. 
+Make sure you have at least python 2.7 installed on your system. Also you 
+should have [pip](https://packaging.python.org/installing/) installed on your system. Optionally, you can install 
+[virtualenv](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/) 
+to ensure you dont polute your global environment by mistake.
 
 Manual Installation
 -------------------
-While inside of the project's directory, at your terminal, enter the 
+You can clone, or download this project to install it. To clone, enter this 
+command at your terminal.
+
+    git clone https://github.com/tandalf/toy_dms.git
+
+
+To proceed with installing the app, at your terminal, enter the 
 following commands.
     
+    cd toy_dms
     pip install -r requirements.txt
     django-admin migrate --settings=toy_dms.settings
     
@@ -167,7 +175,7 @@ downloadable file.
 
 Update, Delete
 --------------
-`http://localhost:8000/documents/:id`    (GET, PUT, DELETE)
+`http://localhost:8000/documents/:id/`    (GET, PUT, DELETE)
 
 Content Type: `multipart/form-data`
 
